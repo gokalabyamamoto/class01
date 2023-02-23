@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九九</title>
+</head>
+
+<body>
+    <h1>九九</h1>
+    <table>
+
+        <thead>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <script>
+                a = 1;
+                while (a < 10) {
+                    document.write('<tr>');
+                    document.write('<th>');
+                    document.write(a);
+                    document.write('</th>');
+                    b = 1;
+                    while (b < 10) {
+
+                        c = a * b;
+
+                        document.write('<td>');
+                        document.write(c);
+                        document.write('</td>');
+
+                        b = b + 1;
+
+                    }
+                    document.write('<tr>');
+                    a = a + 1;
+                }
+            </script>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
